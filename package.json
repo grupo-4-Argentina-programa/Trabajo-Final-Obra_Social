@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.4",
+    "nodejs": "^0.0.0",
+    "validate.js": "^0.13.1"
+  }
+}
