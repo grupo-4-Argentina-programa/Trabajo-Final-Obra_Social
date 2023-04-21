@@ -1,5 +1,5 @@
 body {
-    background-image: url("../anton-8q-U8X1zkvI-unsplash.jpg");
+    background-image: url("./anton-8q-U8X1zkvI-unsplash.jpg");
     background-color: rgb(3, 228, 228);
     background-position: center;
     padding: 40px;
@@ -14,13 +14,9 @@ h1 {
     margin-bottom: 48px;
 }
 
-.container {
-    background-color: wheat;
-}
-
 
 .formulario {
-    text-align: right;
+    text-align: left;
 
 }
 input,
