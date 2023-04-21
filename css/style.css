@@ -4,10 +4,6 @@ html{
 
 /*NAVBAR*/
 
-.navbar {
-    background-color: #e2040400;
-    color: #131111; /* dark gray text color */
-  }
   .navbar-brand img {
     border-radius: 50%;
   }
