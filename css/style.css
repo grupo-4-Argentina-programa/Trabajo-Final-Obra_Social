@@ -1,6 +1,8 @@
 html{
     height:100%
 }
+/*NAVBAR*/
+
 .navbar {
     background-color: #e2040400;
     color: #131111; /* dark gray text color */
@@ -9,12 +11,13 @@ html{
   .navbar-brand img {
     border-radius: 50%;
   }
+
+  /*BODY*/
+
 body {
     background-image: url("anton-8q-U8X1zkvI-unsplash.jpg");
-    background-color: rgb(3, 228, 228);
+    background-color: rgb(3, 228, 228); /*fijarse si hay un bug visual al cambiar de pagina, se aplica el fondo y desaparece*/
     background-position: center;
-
-
 }
 
 h1 {
@@ -43,8 +46,6 @@ input,
 button {
     background-color: rgb(17, 63, 124);
 }
-
-
 /*footer*/
 .wrapper {
     min-height: 100%;
