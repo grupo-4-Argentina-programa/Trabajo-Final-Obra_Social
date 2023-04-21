@@ -5,25 +5,56 @@ form.addEventListener("submit", cotizarPlan);
 function cotizarPlan(event) {
     const nombre = document.querySelector('#nombre').value;
     const edad = Number(document.querySelector('#edad').value);
-    const email = document.querySelector('#email').value;
     event.preventDefault();
     const aportes = Number(document.querySelector('#aportes').value);
+
+     let costoFinalPlanjoven = 18000 - aportes;
+  if (edad < 30) {
+    costoFinalPlanjoven = costoFinalPlanjoven * 0.9;
+
+  }
     
-    const planes = [
-        {nombre: "Plan Joven 2000", costo: 18000},
-        { nombre: "Plan Básico 3000", costo: 25000},
-        { nombre: "Plan Premium 5000", costo: 45000}
-    ];
-    
-    const cotizaciones = planes.map(plan => {
-    let costoFinal = plan.costo - aportes;
+    const cotizacionPlanjoven = `Tu plan Joven quedaría al día de la fecha en $${costoFinalPlanjoven}.`;
+    document.querySelector('#planjoven').textContent = cotizacionPlanjoven;
 
-   
+    let costoFinalPlanbasico = 20000 - aportes;
+  if (edad < 30) {
+    costoFinalPlanbasico = costoFinalPlanbasico * 0.9;
 
-    return ` ${plan.nombre} : $${costoFinal}.`;
-})
+  }
 
-    const resultado = cotizaciones.join('\n');
-    document.querySelector('#resultado').textContent = resultado;
+  const cotizacionPlanbasico = `Tu plan basico quedaría al día de la fecha en $${costoFinalPlanbasico}.`;
+  document.querySelector('#planbasico').textContent = cotizacionPlanbasico;
 
+  let costoFinalPlanpremium = 25000 - aportes;
+
+  if (edad < 30) {
+    costoFinalPlanpremium = costoFinalPlanpremium * 0.9;
+  }
+
+  const cotizacionPlanpremium = `Tu plan premiun quedaría al día de la fecha en $${costoFinalPlanpremium}.`;
+  document.querySelector('#planpremium').textContent = cotizacionPlanbasico;
+
+
+const planjoven = document.querySelector('#planjoven');
+const planbasico = document.querySelector('#planbasico');
+const planpremium = document.querySelector('#planpremium');
+
+columna1.innerHTML = "";
+columna2.innerHTML = "";
+columna3.innerHTML = "";
+
+const cotizacion1 = document.createElement('p');
+  cotizacion1.textContent = cotizacionPlanjoven;
+  columna1.appendChild(cotizacion1);
+
+  const cotizacion2 = document.createElement('p');
+  cotizacion2.textContent = cotizacionPlanbasico;
+  columna2.appendChild(cotizacion2);
+
+  const cotizacion3 = document.createElement('p');
+  cotizacion3.textContent = cotizacionPlanpremium;
+  columna3.appendChild(cotizacion3);
 }
+
+
