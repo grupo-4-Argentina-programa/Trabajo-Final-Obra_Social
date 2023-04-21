@@ -32,7 +32,7 @@ function cotizarPlan(event) {
     costoFinalPlanpremium = costoFinalPlanpremium * 0.9;
   }
 
-  const cotizacionPlanpremium = `Tu plan premiun quedaría al día de la fecha en $${costoFinalPlanpremium}.`;
+  const cotizacionPlanpremium = `Tu plan premium quedaría al día de la fecha en $${costoFinalPlanpremium}.`;
   document.querySelector('#planpremium').textContent = cotizacionPlanbasico;
 
 
