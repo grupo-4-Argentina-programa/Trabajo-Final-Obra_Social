@@ -19,6 +19,7 @@ html{
 .nav-link, a{
     color: black;
     font-weight: 600;
+
 }
 .nav-wrapper{
     margin-top: 60px;
@@ -32,7 +33,7 @@ html{
 
 body {
     background-image: url("anton-8q-U8X1zkvI-unsplash.jpg");
-    background-color: rgb(3, 228, 228); /*fijarse si hay un bug visual al cambiar de pagina, se aplica el fondo y desaparece*/
+    background-color: rgba(126, 229, 255, 0.89); /*fijarse si hay un bug visual al cambiar de pagina, se aplica el fondo y desaparece*/
     background-position: center;
     background-size: 170%, cover;
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@ h1 {
 
 .formulario {
     text-align: right;
-    padding: 40;
+    padding: 30;
     font-family: "Nunito" sans-serif;
     
 
