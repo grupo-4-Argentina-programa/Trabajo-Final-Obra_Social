@@ -48,53 +48,60 @@
 </header>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6" id="titulo">
-                <h1>¡Quiero asociarme!</h1>
-                <div class="col-md-6" id="formulario">
-                    <form>
-                        <label for="Nombre">Tu nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                        <br>
-                        <label for="Edad">Edad:</label>
-                        <input type="number" id="edad" name="edad" required>
-                        <br>
-                        <label for="Aportes">Ingrese el monto de aportes según su recibo de sueldo:</label>
-                        <input type="number" id="aportes" name="aportes" required>
-                        <br>
-                        <label for="Provincia">Lugar de residencia: </label>
-                        <select id="provincia" name="provincia" required>
-                            <option value="">Seleccioná una provincia</option>
-                            <option value="Buenos Aires">Buenos Aires</option>
-                            <option value="Catamarca">Catamarca</option>
-                            <option value="Entre Rios">Entre Rios</option>
-                            <option value="Misiones">Misiones</option>
-                            <option value="Chubut">Chubut</option>
-                            <option value="Tucuman">Tucuman</option>
-                            <option value="Mendoza">Mendoza</option>
-                            <option value="Salta">Salta</option>
-                            <option value="Neuquen">Neuquen</option>
-                            <option value="San Luis">San Luis</option>
-                            <option value="Tierra del Fuego">Tierra del Fuego</option>
-                            <option value="Formosa">Formosa</option>
-                            <option value="Corrientes">Corrientes</option>
-                            <option value="Jujuy">Jujuy</option>
-                            <option value="Rio Negro">San Juan</option>
-                            <option value="Cordoba">Cordoba</option>
-                            <option value="La Pampa">La Pampa</option>
-                            <option value="Santa Fe">Santa Fe</option>
-                            <option value="La Rioja">La Rioja</option>
-                            <option value="Chaco">Chaco</option>
-                            <option value="Santiago Del Estero">Santiago del Estero</option>
-                            <option value="Santa Cruz">Santa Cruz</option>
-                        </select>
-                        <br>
-                        <br>
-                        <button type="submit">COTIZÁ AHORA</button>
-                        <br>
-                        <br>
-                    </form>
+    <div class="section-container">
+        <div class="welcome-container">
+            <h1>Cotizá tu plan y evaluá cuál es</h1>
+            <h2>la mejor opción para cuidar tu salud</h2>
+            <h3>Te invitamos a simular tu cuota y a conocer la cobertura de nuestros planes.</h3>
+        </div>
+        <div class="form">
+            <div class="row">
+                <div class="col-md-6" id="titulo">
+                    <h4>¡Quiero asociarme!</h4>
+                    <div class="col-md-6" id="formulario">
+                        <form>
+                            <label for="Nombre">Tu nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <br>
+                            <label for="Edad">Edad:</label>
+                            <input type="text" id="edad" name="edad" required>
+                            <br>
+                            <label for="Aportes">Ingrese el monto de aportes según su recibo de sueldo:</label>
+                            <input type="text" id="aportes" name="aportes" required>
+                            <br>
+                            <label for="Provincia">Lugar de residencia: </label>
+                            <select id="provincia" name="provincia" required>
+                                <option value="">Seleccioná una provincia</option>
+                                <option value="Buenos Aires">Buenos Aires</option>
+                                <option value="Catamarca">Catamarca</option>
+                                <option value="Entre Rios">Entre Rios</option>
+                                <option value="Misiones">Misiones</option>
+                                <option value="Chubut">Chubut</option>
+                                <option value="Tucuman">Tucuman</option>
+                                <option value="Mendoza">Mendoza</option>
+                                <option value="Salta">Salta</option>
+                                <option value="Neuquen">Neuquen</option>
+                                <option value="San Luis">San Luis</option>
+                                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                                <option value="Formosa">Formosa</option>
+                                <option value="Corrientes">Corrientes</option>
+                                <option value="Jujuy">Jujuy</option>
+                                <option value="Rio Negro">San Juan</option>
+                                <option value="Cordoba">Cordoba</option>
+                                <option value="La Pampa">La Pampa</option>
+                                <option value="Santa Fe">Santa Fe</option>
+                                <option value="La Rioja">La Rioja</option>
+                                <option value="Chaco">Chaco</option>
+                                <option value="Santiago Del Estero">Santiago del Estero</option>
+                                <option value="Santa Cruz">Santa Cruz</option>
+                            </select>
+                            <br>
+                            <br>
+                            <button type="submit">COTIZÁ AHORA</button>
+                            <br>
+                            <br>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,7 +159,7 @@
 </body>
 <div class="wrapper">
     <footer class=" text-center text-black bg-white">
-        <div class="container p-4">
+        <div class="footer-container p-4">
             <section class="mb-4">
                 <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
                         class="fab fa-facebook-f"></i></a>
