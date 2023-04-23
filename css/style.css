@@ -2,7 +2,9 @@ html{
     height:100%;
     scroll-behavior:smooth;
 }
-
+body{
+  background-color: antiquewhite;
+}
 /*NAVBAR*/
 .navbar{    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -29,7 +31,7 @@ html{
   }
 
   /*BODY*/
-  .section-container{ /*container de todo el body*/
+  .section-container{ /*container del form y mensaje e bienvenida*/
     display: flex;
     justify-content: space-between; 
     background-color: #1226aa;
@@ -64,8 +66,6 @@ html{
     color: #22193F;
     margin-bottom: 48px;
 }
-
-
 /*FORMULARIO*/
 .form{ /*container del formulario*/
   background-color: rgba(255, 255, 255, 0.89); 
@@ -92,19 +92,24 @@ html{
 .container{
   width: 100%;
   background-color: antiquewhite;
+  
 }
 .card-container{
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   padding-left: 50px;
   padding-right: 50px;
-  gap:10px
+  gap:10px;
+
 }
 .card-body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.card{
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 .last-img{
   height:230px;
@@ -129,6 +134,7 @@ button {
     margin-bottom: -50px;
 }
 footer{
+z-index: 3;
     right: 0;
     left: 0;
     bottom: 0;
