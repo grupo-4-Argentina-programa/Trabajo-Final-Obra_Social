@@ -4,19 +4,17 @@ html{
 }
 body{
   background-color: antiquewhite;
-
 }
 /*NAVBAR*/
 .navbar{    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
-}
-.nav-link{
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}.nav-link{
     color: black;
-}
-
-  .navbar-logo {
+}.nav-link:hover{
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: black;
+  font-weight: 600;
+}.navbar-logo {
     margin-left: 30px;
     transition: transform 0.2s ease-in-out;
     display: flex;
@@ -24,11 +22,9 @@ body{
     position: relative;
     font-size: 18px;
     color: #fff;
-  }
-  .navbar-logo:hover{
+  }.navbar-logo:hover{
     transform: scale(1.1);
-  }
-  .navbar-text {
+  }.navbar-text {
     color: black;
     position: absolute;
     left: 130%;
@@ -36,53 +32,40 @@ body{
     white-space: nowrap;
     transition: all 0.2s ease-in-out;
     opacity: 0;
-  }
-  
-  .navbar-logo:hover .navbar-text {
+  }.navbar-logo:hover .navbar-text {
     left: calc(100% + 10px);
     opacity: 1;
-  }
-.nav-link, a{
+  }.nav-link, a{
     color: black;
     font-weight: 600;
-}
-.nav-wrapper{
+}.nav-wrapper{
     margin-top: 60px;
-}
-.transparent {
+}.transparent {
     background-color: rgba(255, 255, 255) !important;
     opacity: 0.96;
   }
-
   /*BODY*/
   .section-container{ /*container del form y mensaje e bienvenida*/
     display: flex;
     justify-content: space-between; 
     background-color: #1226aa;
-    margin-bottom: -20px;
-}
-  .welcome-container{/*container para los <h1,<h2>,<h3>*/
+}.welcome-container{/*container para los <h1,<h2>,<h3>*/
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     color:white;
     width: 100%;
     margin-left: 10px;
-}
-  h1{
+}h1{
     font-weight: 200;
     margin-top: 100px;
-  }
-  h2{
+  }h2{
     font-size: 40px;
     font-weight: 700;
     margin-top: 100px;
-  }
-  h3{
+  }h3{
     font-size: 20px;
     margin-top: 100px;
-  }
-  h4 {
+  }h4 {
     margin-top: 20px;
     font-family:"Nunito" sans-serif;
     font-size: 28px;
@@ -100,13 +83,11 @@ body{
   justify-content: space-between; 
   align-items: flex-start; 
   margin-bottom: 20px;
-}
-.formulario {
+}.formulario {
     text-align: right;
     padding: 30px;
     font-family: "Nunito" sans-serif;
-}
-.form-row{
+}.form-row{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,8 +100,7 @@ body{
   background-color: antiquewhite;
   margin-top: 50px;
   margin-bottom: 50px;
-}
-.card-container{
+}.card-container{
   margin-top: 50px;
   display: flex;
   flex-direction: row;
@@ -128,27 +108,20 @@ body{
   padding-left: 50px;
   padding-right: 50px;
   gap:50px;
-}
-.card-body{
+}.card-body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   line-height: 1.5;
-}
-ul{
+}ul{
   margin: 0;
-}
-h6{
+}h6{
   margin: 0;
-}
-.card{
+}.card{
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-.last-img{
+}.last-img{
   height:230px;
-}
-input,
- button {
+}input,button {
     border-radius: 100px;
     width: 100%;
     margin: 20px 0px;
@@ -156,7 +129,6 @@ input,
     font-family: "Nunito" sans-serif;
     font-size: black;
  }
-
 button {
     background-color: rgb(17, 63, 124);
 }
