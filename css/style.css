@@ -4,6 +4,7 @@ html{
 }
 body{
   background-color: antiquewhite;
+
 }
 /*NAVBAR*/
 .navbar{    
@@ -89,10 +90,11 @@ body{
     width: fit-content;
 }
 /*TARJETAS*/
+
 .container{
   width: 100%;
   background-color: antiquewhite;
-  
+  margin-top: 50px;
 }
 .card-container{
   margin-top: 50px;
@@ -101,7 +103,6 @@ body{
   padding-left: 50px;
   padding-right: 50px;
   gap:10px;
-
 }
 .card-body{
   display: flex;
