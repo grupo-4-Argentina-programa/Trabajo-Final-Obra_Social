@@ -139,7 +139,8 @@ button {
 }
 .prev-benefits{
   color:gray;
-  line-height: 0;
+  line-height: 1;
+  margin-top: 10px;
 }
 .btn-primary {
   background-color: #1226aa;
