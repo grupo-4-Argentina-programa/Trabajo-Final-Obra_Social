@@ -11,7 +11,9 @@ function cotizarPlan(event) {
   let costoFinalPlanjoven = 18000 - aportes;
   if (edad < 30) {
     costoFinalPlanjoven = costoFinalPlanjoven * 0.9;
-
+  }
+  if (costoFinalPlanjoven < 10000) {
+    costoFinalPlanjoven = 15000
   }
 
   const cotizacionPlanjoven = `Tu plan Joven quedaría al día de la fecha en $${costoFinalPlanjoven}.`;
@@ -20,7 +22,9 @@ function cotizarPlan(event) {
   let costoFinalPlanbasico = 20000 - aportes;
   if (edad < 30) {
     costoFinalPlanbasico = costoFinalPlanbasico * 0.9;
-
+  }
+  if (costoFinalPlanbasico < 18000) {
+    costoFinalPlanbasico = 20000
   }
 
   const cotizacionPlanbasico = `Tu plan basico quedaría al día de la fecha en $${costoFinalPlanbasico}.`;
@@ -31,10 +35,12 @@ function cotizarPlan(event) {
   if (edad < 30) {
     costoFinalPlanpremium = costoFinalPlanpremium * 0.9;
   }
+  if (costoFinalPlanpremium < 23000) {
+    costoFinalPlanpremium = 25000;
+  }
 
   const cotizacionPlanpremium = `Tu plan premium quedaría al día de la fecha en $${costoFinalPlanpremium}.`;
-  document.querySelector('#planpremium').textContent = cotizacionPlanbasico;
-
+  document.querySelector('#planpremium').textContent = cotizacionPlanpremium;
 
   const planjoven = document.querySelector('#planjoven');
   const planbasico = document.querySelector('#planbasico');
