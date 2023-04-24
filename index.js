@@ -71,3 +71,12 @@ $(window).scroll(function () {
     navbar.removeClass('transparent');
   }
 });
+
+//validateJS
+window.addEventListener('load', () => {
+  let validadorFormulario = new FormValidator('registrarDatos', [{
+    name: 'Nombre',
+    display: 'Nombre',
+    rules: 'required|min_length[10]'
+  }]);
+})
