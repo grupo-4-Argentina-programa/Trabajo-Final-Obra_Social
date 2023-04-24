@@ -110,6 +110,13 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  line-height: 1.5;
+}
+ul{
+  margin: 0;
+}
+h6{
+  margin: 0;
 }
 .card{
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -129,6 +136,10 @@ input,
 
 button {
     background-color: rgb(17, 63, 124);
+}
+.prev-benefits{
+  color:gray;
+  line-height: 0;
 }
 .btn-primary {
   background-color: #1226aa;
