@@ -1,7 +1,6 @@
 const form = document.querySelector("form");
 form.addEventListener("submit", cotizarPlan);
 
-
 function cotizarPlan(event) {
   const nombre = document.querySelector('#nombre').value;
   const edad = Number(document.querySelector('#edad').value);
