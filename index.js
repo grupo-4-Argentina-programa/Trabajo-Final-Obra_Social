@@ -10,7 +10,7 @@ function cotizarPlan(event) {
   const porcentajePlanBasico = 0.2;
   const porcentajePlanPremium = 0.3;
 
-  let costoFinalPlanjoven = Math.min(sueldo*porcentajePlanJoven);
+  let costoFinalPlanjoven = Math.min(sueldo * porcentajePlanJoven);
   if (edad < 30) {
     costoFinalPlanjoven = costoFinalPlanjoven * 0.9;
   }
@@ -34,10 +34,10 @@ function cotizarPlan(event) {
   <br>
   </div>
 `;
-  
 
 
-  let costoFinalPlanbasico = Math.min(sueldo*porcentajePlanBasico);
+
+  let costoFinalPlanbasico = Math.min(sueldo * porcentajePlanBasico);
   if (edad < 30) {
     costoFinalPlanbasico = costoFinalPlanbasico * 0.9;
   }
@@ -63,7 +63,7 @@ function cotizarPlan(event) {
 
 `;
 
-  let costoFinalPlanpremium = Math.min(sueldo*porcentajePlanPremium);
+  let costoFinalPlanpremium = Math.min(sueldo * porcentajePlanPremium);
   if (edad < 30) {
     costoFinalPlanpremium = costoFinalPlanpremium * 0.9;
   }
@@ -125,12 +125,3 @@ $(window).scroll(function () {
     navbar.removeClass('transparent');
   }
 });
-
-//validateJS
-window.addEventListener('load', () => {
-  let validadorFormulario = new FormValidator('registrarDatos', [{
-    name: 'Nombre',
-    display: 'Nombre',
-    rules: 'required|min_length[10]'
-  }]);
-})
