@@ -38,7 +38,70 @@ body{
   }.nav-link, a{
     color: black;
     font-weight: 600;
-}.nav-wrapper{
+}
+.navbar{    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}.nav-link{
+    color: black;
+}.nav-link:hover{
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: black;
+  font-weight: 600;
+}.navbar-logo {
+    margin-left: 30px;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+  }.navbar-logo:hover{
+    transform: scale(1.1);
+  }.navbar-text {
+    color: black;
+    position: absolute;
+    left: 130%;
+    margin-left: 10px;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }.navbar-logo:hover .navbar-text {
+    left: calc(100% + 10px);
+    opacity: 1;
+  }.nav-link, a{
+    color: black;
+    font-weight: 600;
+}.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:active::after {
+  color: #000000;
+  box-shadow: #000000;
+}
+
+.navbar-nav .nav-link::after {
+  display: block;
+  content: '';
+  border-bottom: 2px solid rgba(38, 60, 156, 0.699);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:active::after {
+  transform: scaleX(1);
+}
+
+.nav-wrapper{
+    margin-top: 60px;
+}.transparent {
+    background-color: rgba(255, 255, 255) !important;
+    opacity: 0.96;
+  }.nav-wrapper{
     margin-top: 60px;
 }.transparent {
     background-color: rgba(255, 255, 255) !important;
@@ -95,7 +158,6 @@ body{
     width: fit-content;
 }
 /*TARJETAS*/
-
 .container{
   width: 100%;
   background-color: antiquewhite;
@@ -159,10 +221,34 @@ button {
     margin-bottom: -50px;
 }
 footer{
-z-index: 3;
+
     right: 0;
     left: 0;
     bottom: 0;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }   
+.footer-end{
+  background-color: #263C9E;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-img{
+  width: 150px;
+  height:50px;
+}
+/* Facebook button */
+.btn-facebook:hover {
+  background-color: #3b5998;
+}
+
+/* WhatsApp button */
+.btn-whatsapp:hover {
+  background-color: #25d366;
+}
+
+/* Instagram button */
+.btn-instagram:hover {
+  background-color: #C13584;
+}
