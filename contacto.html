@@ -53,56 +53,69 @@
             <h4 class="text-center h4-form">Complete el siguiente formulario para poder contactarnos con usted</h4>
         </div>
         <div id="fondoformulario" class="container col-3 justify-content-center">
-            <form class="formulario-contacto mt-4 mb-7" id="contacto">
+            <form class="formulario mt-4 mb-7" id="contacto">
                 <div class="col-12">
-                    <label for="Nombre" class="form-label">Nombre y apellido:</label>
-                    <input class=" -input form-control" type="text" id="nombre" name="nombre"
-                        placeholder="Escribe tu nombre" />
+                <label for="Nombre" class="form-label">Nombre y apellido:</label>
+                <input
+                  class=" -input form-control"
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Escribe tu nombre"
+                />
                 </div>
                 <div class="col 12">
-                    <label for="Email" class="form-label">E-mail: </label>
-                    <input class="-input form-control" type="email" id="email" name="email"
-                        placeholder="Escribe tu E-mail" />
+                <label for="Email" class="form-label">E-mail: </label>
+                <input
+                  class="-input form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Escribe tu E-mail"
+                />
                 </div>
-
+      
                 <div class="col-12">
-                    <label for="Telefono" class="form-label">Telefono:</label>
-                    <input class="-input form-control" type="text" placeholder="Escribe tu telefono" />
+                <label for="Telefono" class="form-label">Telefono:</label>
+                <input
+                  class="-input form-control"
+                  type="text"
+                  placeholder="Escribe tu telefono"
+                />
                 </div>
                 <div class="col-12s">
-                    <label class="form-label" for="Horario">Disponibilidad horaria:
-                    </label>
-                    <br>
-                    <label class=" form-label" for="horario1">De</label>
-                    <select style="border-radius :10px ;width: 20% ; margin: 20px 0px;padding :7px 10px ;"
-                        name="horario1" id="horario1">
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                    </select>
-                    <label class=" form-label" for="horario2">Hasta</label>
-                    <select style="border-radius :10px ;width: 20% ; margin: 20px 0px;padding :7px 10px ;"
-                        name="horario2" id="horario2">
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                    </select>
+                <label class="form-label" for="Horario"
+                  >Disponibilidad horaria:
+                </label>
+                <br>
+                <label class=" form-label" for="horario1">De</label>
+                <select style="border-radius :10px ;width: 20% ; margin: 20px 0px;padding :7px 10px ;" name="horario1" id="horario1">
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                </select>
+                <label class=" form-label" for="horario2">Hasta</label>
+                <select style="border-radius :10px ;width: 20% ; margin: 20px 0px;padding :7px 10px ;" name="horario2" id="horario2">
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                </select>
                 </div>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary" onclick="enviarDatos()">
