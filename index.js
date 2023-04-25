@@ -5,38 +5,34 @@ function cotizarPlan(event) {
   const nombre = document.querySelector('#nombre').value;
   const edad = Number(document.querySelector('#edad').value);
   event.preventDefault();
-  const aportes = Number(document.querySelector('#aportes').value);
+  const sueldo = Number(document.querySelector('#sueldo').value);
+  const porcentajePlanJoven = 0.1;
+  const porcentajePlanBasico = 0.2;
+  const porcentajePlanPremium = 0.3;
 
-  let costoFinalPlanjoven = 18000 - aportes;
+  let costoFinalPlanjoven = Math.min(sueldo*porcentajePlanJoven);
   if (edad < 30) {
     costoFinalPlanjoven = costoFinalPlanjoven * 0.9;
   }
-  if (costoFinalPlanjoven < 10000) {
-    costoFinalPlanjoven = 15000
-  }
+ 
 
   const cotizacionPlanjoven = `Tu plan Joven quedaría al día de la fecha en $${costoFinalPlanjoven}.`;
   document.querySelector('#planjoven').textContent = cotizacionPlanjoven;
 
-  let costoFinalPlanbasico = 20000 - aportes;
+  let costoFinalPlanbasico = Math.min(sueldo*porcentajePlanBasico);
   if (edad < 30) {
     costoFinalPlanbasico = costoFinalPlanbasico * 0.9;
   }
-  if (costoFinalPlanbasico < 18000) {
-    costoFinalPlanbasico = 20000
-  }
+ 
 
   const cotizacionPlanbasico = `Tu plan basico quedaría al día de la fecha en $${costoFinalPlanbasico}.`;
   document.querySelector('#planbasico').textContent = cotizacionPlanbasico;
 
-  let costoFinalPlanpremium = 25000 - aportes;
-
+  let costoFinalPlanpremium = Math.min(sueldo*porcentajePlanPremium);
   if (edad < 30) {
     costoFinalPlanpremium = costoFinalPlanpremium * 0.9;
   }
-  if (costoFinalPlanpremium < 23000) {
-    costoFinalPlanpremium = 25000;
-  }
+
 
   const cotizacionPlanpremium = `Tu plan premium quedaría al día de la fecha en $${costoFinalPlanpremium}.`;
   document.querySelector('#planpremium').textContent = cotizacionPlanpremium;

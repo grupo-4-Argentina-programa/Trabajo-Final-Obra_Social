@@ -140,12 +140,13 @@ body{
 .form{ /*container del formulario*/
   background-color: rgba(255, 255, 255, 0.89); 
   border-radius: 0 0 0 70px;
-  width: fit-content;
+  width: 300px;
   display: flex;
   flex-basis: 90% ;
   justify-content: space-between; 
   align-items: flex-start; 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: ;
 }.formulario {
     text-align: right;
     padding: 30px;
