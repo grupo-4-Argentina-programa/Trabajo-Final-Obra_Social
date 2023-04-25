@@ -180,6 +180,9 @@ body{
  background-position: center;
  height: 100px;
 }
+.form-check{
+  margin-top: 20px;
+}
 
 /*TARJETAS*/
 .container{
