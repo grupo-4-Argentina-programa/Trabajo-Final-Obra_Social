@@ -23,8 +23,10 @@
     <div class="nav-wrapper">
         <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="Alianza Salud-1.png" width="30" height="30"
-                        class="d-inline-block align-top" alt=""> Alianza Salud</a>
+                <a href="./index.html" class="navbar-logo"><img src="./logo-test.png" width="80" height="40"
+                        class="d-inline-block align-top" alt="">
+                    <span class="navbar-text">Alianza Salud</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,6 +41,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./about-us.html">About us</a>
                         </li>
                     </ul>
                 </div>
@@ -59,15 +64,21 @@
                 <div class="col-md-6" id="titulo">
                     <h4>¡Quiero asociarme!</h4>
                     <div class="col-md-6" id="formulario">
-                        <form>
+                        <form name="registrarDatos" id="registrarDatos">
                             <label for="Nombre">Tu nombre:</label>
                             <input type="text" id="nombre" name="nombre" required>
+                            <br>
+                            <label for="dni">Dni:</label>
+                            <input type="number" id="dni" name="dni" required>
+                            <br>
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" required>
                             <br>
                             <label for="Edad">Edad:</label>
                             <input type="text" id="edad" name="edad" required>
                             <br>
-                            <label for="Aportes">Ingrese el monto de aportes según su recibo de sueldo:</label>
-                            <input type="text" id="aportes" name="aportes" required>
+                            <label for="sueldo">Ingrese su sueldo bruto:</label>
+                            <input type="number" id="sueldo" name="sueldo" max="200000" required>
                             <br>
                             <label for="Provincia">Lugar de residencia: </label>
                             <select id="provincia" name="provincia" required>
@@ -114,14 +125,20 @@
                         <img src="./css/imagen1.jpg" class="card-img-top" alt="Imagen de seguro de salud">
                         <div class="card-body" id="planjoven">
                             <h5 class="card-title">Seguro de Salud Básico / Plan joven</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque ratione
-                                inventore dolorum, itaque dolor id accusantium sed tempore fugit voluptas! Aliquid
-                                possimus,
-                                qui voluptate dignissimos placeat corrupti odio sapiente eos!
-                                Rerum quisquam, nisi recusandae, temporibus vero molestiae commodi quis perspiciatis
-                                illum
-                                totam deserunt vel consequatur hic voluptatem culpa magni ab ducimus. Sint ea totam
-                                blanditiis ut officia asperiores facilis amet?</p>
+                            <h6>Destinado a:</h6>
+                            <ul>
+                                <li>Menores de 30 años</li>
+                                <li>Solteros</li>
+                                <li>Estudiantes</li>
+                            </ul>
+                            <hr>
+                            <h6>Beneficios:</h6>
+                            <ul>
+                                <li>Consultas médicas las 24hs desde tu celu</li>
+                                <li>100% de cobertura en métodos anticonceptivos</li>
+                                <li>Cobertura nacional e internacional</li>
+                            </ul>
+                            <p class="card-text"></p>
                             <a href="#" class="btn btn-primary">Más información</a>
                         </div>
                     </div>
@@ -131,14 +148,21 @@
                         <img src="./css/imagen2.jpg" class="card-img-top" alt="Imagen de seguro de salud">
                         <div class="card-body" id="planbasico">
                             <h5 class="card-title">Seguro de Salud Completo / Plan basico</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sit
-                                harum
-                                odit, earum praesentium autem dicta! Eius sed obcaecati exercitationem laudantium
-                                cupiditate. Optio accusamus unde temporibus alias facilis magnam corrupti.
-                                Id iusto corporis accusantium, minima odit necessitatibus eius in tenetur rem dicta
-                                magni
-                                sed minus voluptate iste voluptatem adipisci! Eligendi recusandae quae, quas voluptates
-                                ratione quia nam placeat sapiente eum.</p>
+                            <h6>Destinado a:</h6>
+                            <ul>
+                                <li>Trabajadores en relación de dependencia</li>
+                                <li>Monotributistas y Autónomos</li>
+                            </ul>
+                            <hr>
+                            <h6>Beneficios:</h6>
+                            <p class="prev-benefits">Incluye los beneficios anteriores, y además:</p>
+                            <ul>
+                                <li>Bonificación por 3 o más integrantes</li>
+                                <li>Telemedicina las 24hs sin cargo</li>
+                                <li>Tramites on-line y credencial digital</li>
+                                <li>Médico a domicilio <b>sin cargo</b></li>
+                            </ul>
+                            <p class="card-text"></p>
                             <a href="#" class="btn btn-primary">Más información</a>
                         </div>
                     </div>
@@ -148,11 +172,21 @@
                         <img src="./css/imagen3.jpg" class="card-img-top last-img" alt="Imagen de seguro de salud">
                         <div class="card-body" id="planpremium">
                             <h5 class="card-title">Seguro de Salud Completo / Plan premium</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas
-                                est
-                                commodi consectetur sapiente asperiores sit blanditiis, veniam deserunt repellendus
-                                praesentium. Voluptatem eaque doloremque quibusdam distinctio repellendus at voluptatum
-                                neque?</p>
+                            <h6>Destinado a:</h6>
+                            <ul>
+                                <li>Trabajadores en relación de dependencia</li>
+                                <li>Monotributistas y Autónomos</li>
+                            </ul>
+                            <hr>
+                            <h6>Beneficios:</h6>
+                            <p class="prev-benefits">Incluye los beneficios anteriores, y además:</p>
+                            <ul>
+                                <li>Cobertura integral</li>
+                                <li>Médico a domicilio <b>sin cargo</b></li>
+                                <li>Máximos valores de reintegros</li>
+                                <li>Asistencia al viajero</li>
+                            </ul>
+                            <p class="card-text"></p>
                             <a href="#" class="btn btn-primary">Más información</a>
                         </div>
                     </div>
@@ -168,11 +202,11 @@
     <footer class=" text-center text-black bg-white">
         <div class="footer-container p-4">
             <section class="mb-4">
-                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                <a class="btn btn-outline-dark btn-floating m-1 btn-facebook" href="#!" role="button"><i
                         class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-twitter"></i></a>
-                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                <a class="btn btn-outline-dark btn-floating m-1 btn-whatsapp" href="#!" role="button"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a class="btn btn-outline-dark btn-floating m-1 btn-instagram" href="#!" role="button"><i
                         class="fab fa-instagram"></i></a>
             </section>
             <section class="mb-4">
@@ -181,9 +215,12 @@
                 <hr>
             </section>
         </div>
-        <div class="text-center p-3" style="background-color: rgba(38, 60, 156, 0.699);">
-            <p>© 2023 Alianza Salud</p>
+        <div class="text-center p-3 footer-end">
+            <img src="./alianzasalud-logo-footer-transparent.png" width="80" height="40"
+                class="d-inline-block align-top footer-img" alt="">
+
         </div>
     </footer>
+</div>
 
 </html>
