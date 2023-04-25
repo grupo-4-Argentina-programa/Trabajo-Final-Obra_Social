@@ -32,6 +32,7 @@ function cotizarPlan(event) {
   </ul>
   <button type="submit">Estoy interesado/a!</button>
   <br>
+  </div>
 `;
   
 
@@ -59,6 +60,7 @@ function cotizarPlan(event) {
   </ul>
   <button type="submit">Estoy interesado/a!</button>
   <br>
+
 `;
 
   let costoFinalPlanpremium = Math.min(sueldo*porcentajePlanPremium);
@@ -105,6 +107,13 @@ function cotizarPlan(event) {
   const cotizacion3 = document.createElement('p');
   cotizacion3.textContent = cotizacionPlanpremium;
   columna3.appendChild(cotizacion3);
+}
+
+//scroll hacia el resultado de presupuesto
+
+function scrollToResultado() {
+  const resultadoSection = document.getElementById('resultado');
+  resultadoSection.scrollIntoView({ behavior: 'smooth' });
 }
 
 //jQuery navbar
