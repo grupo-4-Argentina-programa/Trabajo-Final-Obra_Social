@@ -13,7 +13,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacto.css">
 </head>
 <header>
     <div class="nav-wrapper">
@@ -49,39 +49,86 @@
 </header>
 
 <body>
-    <h1>Lorem</h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi qui hic quos. Placeat, rerum, dolore itaque
-        maxime
-        tempora doloremque temporibus dicta dolorum quidem necessitatibus error rem quae enim omnis iste!
-        Accusamus qui odit quia sint tempora dolorum, corporis odio possimus iure esse sit quos illo beatae autem
-        provident
-        iste? Deleniti similique, cupiditate debitis in asperiores nesciunt quam eius aliquam architecto.
-        Ab similique deserunt neque non nemo? Repellendus a eaque reprehenderit laborum et amet eveniet velit. Explicabo
-        iste voluptatibus officiis itaque eveniet. Minima iure nesciunt dignissimos ducimus esse eaque cupiditate aut!
-        Expedita, nulla! Velit nisi voluptatum vitae, quaerat doloribus, voluptas amet repudiandae quisquam itaque
-        blanditiis quas necessitatibus? Ut voluptatem cumque quisquam error harum, animi nobis quos quia corrupti
-        ratione
-        libero ullam!
-        Explicabo itaque nulla nihil praesentium alias quas totam. Quidem laborum molestiae atque assumenda eum.
-        Corporis,
-        sequi exercitationem. Assumenda cum facilis laboriosam animi nesciunt, ipsam quo cupiditate! Laborum, enim!
-        Veritatis, iure?
-        Blanditiis cum deleniti fugiat dicta vel sed nostrum sit beatae reiciendis autem quod numquam aut quis dolorem
-        suscipit maxime ab, animi similique aspernatur, quibusdam nam minima totam. Adipisci, error assumenda.
-        Autem et tempora at ratione aut deserunt sequi nulla quos atque. Necessitatibus quis reprehenderit sunt quae
-        cum!
-        Dicta, animi possimus corporis quo delectus recusandae? Necessitatibus eaque architecto beatae. Voluptatem,
-        reiciendis.
-        Voluptatibus ut nam similique obcaecati, repudiandae dolores eveniet voluptates harum et accusamus. Earum, vero
-        fuga
-        et suscipit nobis eos deserunt. A, quidem nulla? Doloribus fugit ab eius odit adipisci. Natus.
-        Sapiente cupiditate, recusandae fugit deserunt doloremque, quibusdam perspiciatis odio, illo vitae consequatur
-        minus
-        ratione. Voluptas dolorum, culpa modi dignissimos veritatis quibusdam, quidem perspiciatis facere consectetur
-        deserunt blanditiis illum illo dolore!
-        Consequatur necessitatibus odio rerum rem ad, repudiandae error doloremque itaque distinctio magni totam libero
-        minus nesciunt recusandae quae similique? Reiciendis, dolorem labore! Molestiae voluptas fugit earum voluptatum
-        iure, incidunt in!</p>
+   
+    <div class="section-container  "> 
+        <div class="welcome-container">
+            <h1 class="text-center">Falta muy poco para que sea parte de esta gran familia.</h1>
+            <h4 class="text-center">Complete el siguiente formulario para poder contactarnos con usted</h4>
+        </div>
+        <div id="fondoformulario" class="container col-3 justify-content-center">
+            <form class="formulario mt-4 mb-7" id="contacto">
+                <div class="col-12">
+                <label for="Nombre" class="form-label">Nombre y apellido:</label>
+                <input
+                  class=" -input form-control"
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Escribe tu nombre"
+                />
+                </div>
+                <div class="col 12">
+                <label for="Email" class="form-label">E-mail: </label>
+                <input
+                  class="-input form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Escribe tu E-mail"
+                />
+                </div>
+      
+                <div class="col-12">
+                <label for="Telefono" class="form-label">Telefono:</label>
+                <input
+                  class="-input form-control"
+                  type="text"
+                  placeholder="Escribe tu telefono"
+                />
+                </div>
+                <div class="col-12s">
+                <label class="form-label" for="Horario"
+                  >Disponibilidad horaria:
+                </label>
+                <br>
+                <label class=" form-label" for="horario1">De</label>
+                <select style="border-radius :10px ;width: 20% ; margin: 20px 0px;padding :7px 10px ;" name="horario1" id="horario1">
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                </select>
+                <label class=" form-label" for="horario2">Hasta</label>
+                <select style="border-radius :10px ;width: 20% ; margin: 20px 0px;padding :7px 10px ;" name="horario2" id="horario2">
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                </select>
+                </div>
+                <div class="col-12">
+                <button type="submit" class="btn btn-primary" onclick="enviarDatos()">
+                  Enviar
+                </button>
+                </div>
+            </form>
+        </div>
+    </div>
+      
 </body>
 <div class="wrapper">
     <footer class=" text-center text-black bg-white">
