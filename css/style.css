@@ -143,8 +143,7 @@ body{
   width: 300px;
   display: flex;
   flex-basis: 90% ;
-  justify-content: space-between; 
-  align-items: flex-start; 
+  justify-content: center;
   margin-bottom: 30px;
 }.formulario {
     text-align: right;
