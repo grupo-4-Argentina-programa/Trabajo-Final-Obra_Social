@@ -20,6 +20,7 @@ function cotizarPlan(event) {
   document.querySelector('#planjoven').textContent = cotizacionPlanjoven;
   const planJoven = document.querySelector('#planjoven');
   planJoven.innerHTML = `
+  <p><b>${cotizacionPlanjoven}</b></p>
   <h5>Plan Joven</h5>
   <br>
   <h6>Beneficios</h6>
@@ -29,8 +30,8 @@ function cotizarPlan(event) {
       <li>100% de cobertura en métodos anticonceptivos</li>
       <li>Cobertura nacional e internacional</li>
   </ul>
+  <button type="submit">Estoy interesado/a!</button>
   <br>
-  <p><b>${cotizacionPlanjoven}</b></p>
 `;
   
 
@@ -45,6 +46,7 @@ function cotizarPlan(event) {
   document.querySelector('#planbasico').textContent = cotizacionPlanbasico;
   const planBasico = document.querySelector('#planbasico');
   planBasico.innerHTML = `
+  <p><b>${cotizacionPlanbasico}</b></p>
   <h5>Plan basico</h5>
   <br>
   <h6>Beneficios</h6>
@@ -55,8 +57,8 @@ function cotizarPlan(event) {
       <li>Tramites on-line y credencial digital</li>
       <li>Médico a domicilio <b>sin cargo</b></li>
   </ul>
+  <button type="submit">Estoy interesado/a!</button>
   <br>
-  <p><b>${cotizacionPlanbasico}</b></p>
 `;
 
   let costoFinalPlanpremium = Math.min(sueldo*porcentajePlanPremium);
@@ -69,6 +71,7 @@ function cotizarPlan(event) {
   document.querySelector('#planpremium').textContent = cotizacionPlanpremium;
   const Planpremium = document.querySelector('#planpremium');
   Planpremium.innerHTML = `
+  <p><b>${cotizacionPlanpremium}</b></p>
   <h5>Plan Premium</h5>
   <br>
   <h6>Beneficios</h6>
@@ -79,8 +82,8 @@ function cotizarPlan(event) {
       <li>Máximos valores de reintegros</li>
       <li>Asistencia al viajero</li>
   </ul>
+  <button type="submit">Estoy interesado/a!</button>
   <br>
-  <p><b>${cotizacionPlanpremium}</b></p>
 `;
 
   const planjoven = document.querySelector('#planjoven');
