@@ -18,6 +18,22 @@ function cotizarPlan(event) {
 
   const cotizacionPlanjoven = `Tu plan Joven quedaría al día de la fecha en $${costoFinalPlanjoven}.`;
   document.querySelector('#planjoven').textContent = cotizacionPlanjoven;
+  const planJoven = document.querySelector('#planjoven');
+  planJoven.innerHTML = `
+  <h5>Plan Joven</h5>
+  <br>
+  <h6>Beneficios</h6>
+  <br>
+  <ul>
+      <li>Consultas médicas las 24hs desde tu celu</li>
+      <li>100% de cobertura en métodos anticonceptivos</li>
+      <li>Cobertura nacional e internacional</li>
+  </ul>
+  <br>
+  <p><b>${cotizacionPlanjoven}</b></p>
+`;
+  
+
 
   let costoFinalPlanbasico = Math.min(sueldo*porcentajePlanBasico);
   if (edad < 30) {
@@ -27,6 +43,21 @@ function cotizarPlan(event) {
 
   const cotizacionPlanbasico = `Tu plan basico quedaría al día de la fecha en $${costoFinalPlanbasico}.`;
   document.querySelector('#planbasico').textContent = cotizacionPlanbasico;
+  const planBasico = document.querySelector('#planbasico');
+  planBasico.innerHTML = `
+  <h5>Plan basico</h5>
+  <br>
+  <h6>Beneficios</h6>
+  <br>
+  <ul>
+      <li>Bonificación por 3 o más integrantes</li>
+      <li>Telemedicina las 24hs sin cargo</li>
+      <li>Tramites on-line y credencial digital</li>
+      <li>Médico a domicilio <b>sin cargo</b></li>
+  </ul>
+  <br>
+  <p><b>${cotizacionPlanbasico}</b></p>
+`;
 
   let costoFinalPlanpremium = Math.min(sueldo*porcentajePlanPremium);
   if (edad < 30) {
@@ -34,8 +65,23 @@ function cotizarPlan(event) {
   }
 
 
-  const cotizacionPlanpremium = `Tu plan premium quedaría al día de la fecha en $${costoFinalPlanpremium}.`;
+  const cotizacionPlanpremium = ` Tu plan premium quedaría al día de la fecha en $${costoFinalPlanpremium}.`;
   document.querySelector('#planpremium').textContent = cotizacionPlanpremium;
+  const Planpremium = document.querySelector('#planpremium');
+  Planpremium.innerHTML = `
+  <h5>Plan Premium</h5>
+  <br>
+  <h6>Beneficios</h6>
+  <br>
+  <ul>
+      <li>Cobertura integral</li>
+      <li>Médico a domicilio <b>sin cargo</b></li>
+      <li>Máximos valores de reintegros</li>
+      <li>Asistencia al viajero</li>
+  </ul>
+  <br>
+  <p><b>${cotizacionPlanpremium}</b></p>
+`;
 
   const planjoven = document.querySelector('#planjoven');
   const planbasico = document.querySelector('#planbasico');
