@@ -14,7 +14,7 @@ function cotizarPlan(event) {
   if (edad < 30) {
     costoFinalPlanjoven = costoFinalPlanjoven * 0.9;
   }
- 
+
 
   const cotizacionPlanjoven = `Tu plan Joven quedaría al día de la fecha en $${costoFinalPlanjoven}.`;
   document.querySelector('#planjoven').textContent = cotizacionPlanjoven;
@@ -23,7 +23,7 @@ function cotizarPlan(event) {
   if (edad < 30) {
     costoFinalPlanbasico = costoFinalPlanbasico * 0.9;
   }
- 
+
 
   const cotizacionPlanbasico = `Tu plan basico quedaría al día de la fecha en $${costoFinalPlanbasico}.`;
   document.querySelector('#planbasico').textContent = cotizacionPlanbasico;

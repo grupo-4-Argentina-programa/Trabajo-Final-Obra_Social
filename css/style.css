@@ -146,7 +146,6 @@ body{
   justify-content: space-between; 
   align-items: flex-start; 
   margin-bottom: 30px;
-  font-weight: ;
 }.formulario {
     text-align: right;
     padding: 30px;
@@ -191,7 +190,7 @@ body{
     padding: 7px 10px;
     font-family: "Nunito" sans-serif;
     font-size: black;
- }
+}
 button {
     background-color: rgb(17, 63, 124);
 }
@@ -251,4 +250,18 @@ footer{
 /* Instagram button */
 .btn-instagram:hover {
   background-color: #C13584;
+}
+
+/* Quienes somos */
+.h1-quienes-somos{
+  margin: 1rem;
+}
+.quienes-somos {
+  margin: 1rem;
+}
+.imagen-qs{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: auto;
 }
