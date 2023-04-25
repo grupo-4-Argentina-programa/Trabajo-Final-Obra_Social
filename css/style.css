@@ -215,7 +215,7 @@ body{
     padding: 7px 10px;
     font-family: "Nunito" sans-serif;
     font-size: black;
- }
+}
 button {
     background-color: rgb(17, 63, 124);
 }
@@ -276,3 +276,61 @@ footer{
 .btn-instagram:hover {
   background-color: #C13584;
 }
+
+/* Quienes somos */
+.h1-quienes-somos{
+  margin: 1rem;
+}
+.quienes-somos {
+  margin: 1rem;
+}
+.imagen-qs{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: auto;
+}
+
+/*Estilo formulario*/
+.section-container {
+  background-color: #1226aa;
+  margin-top: 5%;
+}
+
+.h1-form {
+
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 100px;
+
+}
+
+.h4-form {
+
+  font-weight: 400;
+  margin-top: 100px;
+  color:white;
+}
+
+.container-form {
+  background-color: rgba(225, 225, 255, 0.89);
+
+}
+
+.formulario-contacto {
+  text-align: left;
+  padding: 30;
+  font-family: "nunito" sans-serif;
+
+}
+
+.-input {
+  border-radius: 10px;
+  width: 100%;
+  margin: 20px 0px;
+  padding: 7px 10px;
+  font-family: "Nunito" sans-serif;
+  font-size: black;
+}
+
+
