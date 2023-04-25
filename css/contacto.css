@@ -1,0 +1,54 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.section-container {
+    background-color: #1226aa;
+    margin-top: 5%;
+}
+
+h1 {
+
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 100px;
+
+}
+
+h4 {
+
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.container {
+    background-color: rgba(225, 225, 255, 0.89);
+
+}
+
+.formulario {
+    text-align: left;
+    padding: 30;
+    font-family: "nunito" sans-serif;
+
+}
+
+.-input {
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 7px 10px;
+    font-family: "Nunito" sans-serif;
+    font-size: black;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    margin-bottom: -50px;
+}
