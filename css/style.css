@@ -146,25 +146,23 @@ body{
   justify-content: center;
   margin-bottom: 30px;
 }.formulario {
-    text-align: right;
-    padding: 100px;
-    font-family: "Nunito" sans-serif;
-    width: 100%;
-    align-items: center;
+  text-align: right;
+  padding: 100px;
+  font-family: "Nunito" sans-serif;
+  width: 100%;
+  align-items: center;
 }
 .input{/*inputs formulario presupuesto*/
-  border-radius: 0% !important;
   background-color: whitesmoke;
   border: none !important;
   text-align: center;
-
+  margin: 0;
 }
 .col-md-6 { /*columna de la derecha con inputs*/
   text-align: center;
   padding: 20px;
   font-family: "nunito black italic" sans-serif;
   width: 100%;
-  border-radius: 0% !important;
 
 }
 .form-row{
@@ -172,7 +170,6 @@ body{
     align-items: center;
     justify-content: center;
     width: fit-content;
-  
 }
 .welcome-container{
  background-size: 10%, cover;
