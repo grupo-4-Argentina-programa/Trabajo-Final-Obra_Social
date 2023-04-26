@@ -238,11 +238,11 @@ hr {
 }
 .top-text{
   height: fit-content;
-  width: 800px;
+  width: fit-content;
 }
 .bottom-text{
   height: fit-content;
-  width: 800px;
+  width: fit-content;
 }
 .h6-quienes-somos{
   margin: 30px;
@@ -377,7 +377,7 @@ footer{
   }
   .navbar-logo {
     margin: 0;
-    left: 40%;
+    left: 45%;
     height:80px;
     width: 80px;
   }
@@ -387,7 +387,7 @@ footer{
   .navbar-link:active {
     transition: none;
     transform: none;
-    color:white;
+    color:transparent;
   }
   .section-container{
     flex-direction: column;
@@ -415,7 +415,9 @@ footer{
     width: 100%;
     height: 100%;
   }
-
+.about-us-txt-container{
+  margin-top: 100px;
+}
   .container .row .card-container{
     flex-direction: column;
     justify-content: center;
@@ -456,7 +458,32 @@ footer{
   .btn-primary{
     width: fit-content;
   }
-  }@media screen and (max-width: 767px) {
+}@media screen and (max-width:991px){
+  .about-us-txt-container{
+    margin-top: 200px;
+  }
+}
+  @media screen and (max-width: 767px) {
+    .about-us-txt-container{
+      display: flex;
+      margin-top: 150px;
+      flex-wrap: wrap;
+      align-items: center;
+
+    }
+    .top-text{
+      flex-wrap: wrap;
+      width: fit-content;
+    }
+    .bottom-text{
+      width: fit-content;
+    }
+    .navbar-logo {
+      margin: 0;
+      left: 42%; 
+      height:60px;
+      width: 60px;
+    }
     .col-md-4{
       width: 90%;
       align-items: center;
@@ -474,6 +501,11 @@ footer{
     }
   }
   @media screen and (max-width: 700px) {
+    .navbar-logo {
+      left: 40%; 
+      height:50px;
+      width: 50px;
+    }
     .col-md-4{
       margin-right:20px;
       margin-left: 20px;
@@ -571,6 +603,12 @@ footer{
     width: fit-content;
   }
 }@media screen and (max-width:450px){
+  .navbar-logo {
+    margin: 0;
+    left: 35%; 
+    height:50px;
+    width: 50px;
+  }
   .col-md-4{
     width: 80%;
     align-items: center;
