@@ -220,6 +220,59 @@ h5{
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
+/*ABOUT US WEBSITE*/
+hr {
+  border-color: #000000;
+  background-color: #000000;
+  width: 80%;
+  height: 2px;
+}.li-aus{
+    list-style-type:disc;
+    margin-top: 5px;
+}
+.about-us-txt-container{
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+}
+.top-text{
+  height: fit-content;
+  width: 800px;
+}
+.bottom-text{
+  height: fit-content;
+  width: 800px;
+}
+.h6-quienes-somos{
+  margin: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+.quienes-somos {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  text-align: left;
+}.ul-aboutus-container{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ul-aboutus{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.img-gallery{
+  margin-bottom: 100px;
+
+}
 /*footer*/
 .wrapper {
     min-height: 100%;
@@ -258,19 +311,7 @@ footer{
   background-color: #C13584;
 }
 
-/* Quienes somos */
-.h1-quienes-somos{
-  margin: 1rem;
-}
-.quienes-somos {
-  margin: 1rem;
-}
-.imagen-qs{
-  display: flex;
-  margin: auto;
-  width: 90%;
-  height: auto;
-}
+
 
 /*Estilo formulario*/
 .section-container {
