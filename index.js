@@ -30,7 +30,7 @@ function cotizarPlan(event) {
       <li>100% de cobertura en métodos anticonceptivos</li>
       <li>Cobertura nacional e internacional</li>
   </ul>
-  <button type="submit">Estoy interesado/a!</button>
+  <a href="./contacto.html"><button type="submit">Estoy interesado/a!</button></a>
   <br>
   </div>
 `;
@@ -58,7 +58,7 @@ function cotizarPlan(event) {
       <li>Tramites on-line y credencial digital</li>
       <li>Médico a domicilio <b>sin cargo</b></li>
   </ul>
-  <button type="submit">Estoy interesado/a!</button>
+  <a href="./contacto.html"><button type="submit">Estoy interesado/a!</button></a>
   <br>
 
 `;
@@ -84,7 +84,7 @@ function cotizarPlan(event) {
       <li>Máximos valores de reintegros</li>
       <li>Asistencia al viajero</li>
   </ul>
-  <button type="submit">Estoy interesado/a!</button>
+  <a href="./contacto.html"><button type="submit">Estoy interesado/a!</button></a>
   <br>
 `;
 
