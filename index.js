@@ -116,8 +116,10 @@ function scrollToResultado() {
   resultadoSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+
 //funcion validar
 function validar() {
+  
   $('#Nombre-error').html('');
   $('#Email').html('');
   $('#Dni-error').html('');
@@ -125,23 +127,23 @@ function validar() {
   $('#Sueldo-error').html('');
 
 if($('#nombre').val() == '') {
-  $('Nombre-error').html('completar este campo');
+  $('#Nombre-error').html('completar este campo');
 }
 
 if($('#email').val() == '') {
-  $('Emal-error').html('completar este campo');
+  $('#Emal-error').html('completar este campo');
 }
 
 if($('#dni').val() == '') {
-  $('Dni-error').html('completar este campo');
+  $('#Dni-error').html('completar este campo');
 }
 
 if($('#edad').val() == '') {
-  $('Edad-error').html('completar este campo');
+  $('#Edad-error').html('completar este campo');
 }
 
 if($('#sueldo').val() == '') {
-  $('Sueldo-error').html('completar este campo');
+  $('#Sueldo-error').html('completar este campo');
 }
 }
 
