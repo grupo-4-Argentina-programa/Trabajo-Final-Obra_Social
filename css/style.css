@@ -215,8 +215,8 @@ body{
     font-family: "Nunito" sans-serif;
     font-size: black;
 }
-button {
-    background-color: rgb(17, 63, 124);
+.b2 {
+  background-color: rgb(17, 63, 124);
 }
 .prev-benefits{
   color:gray;
