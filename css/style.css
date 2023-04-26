@@ -297,6 +297,7 @@ footer{
   font-family: "Nunito" sans-serif;
   font-size: black;
 }
+<<<<<<< Updated upstream
 @media screen and (max-width: 991px) {
   nav{
     display: flex;
@@ -350,4 +351,9 @@ footer{
   }
 
 
+=======
+ span {
+  color: red
+ }
+>>>>>>> Stashed changes
 
