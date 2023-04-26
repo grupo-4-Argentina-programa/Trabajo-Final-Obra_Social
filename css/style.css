@@ -272,7 +272,8 @@ hr {
 }
 .img-gallery{
   margin-bottom: 100px;
-
+  margin-right:20px;
+  margin-left:10px;
 }
 /*footer*/
 .wrapper {
