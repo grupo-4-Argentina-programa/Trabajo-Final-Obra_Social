@@ -266,9 +266,9 @@ footer{
   height: auto;
 }
 
-/*Estilo formulario*/
+/*Estilo formulario contacto*/
 .section-container {
-  background-color: #1226aa;
+  background-color: #127faa;
   margin-top: 5%;
 }
 
@@ -276,14 +276,15 @@ footer{
 
   font-size: 40px;
   font-weight: 700;
-  margin-top: 100px;
+  margin-top: 50px;
 
 }
 
 .h4-form {
 
   font-weight: 400;
-  margin-top: 100px;
+  margin-top: 50px !important;
+  color:white;
 }
 
 .container-form {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,13 +13,14 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="contacto.js"></script>
 </head>
 <header>
     <div class="nav-wrapper">
         <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
             <div class="container-fluid">
-                <a href="./index.html" class="navbar-logo"><img src="./imagenes/logo-test.png" width="80" height="40"
+                <a href="./index.html" class="navbar-logo"><img src="./logo-test.png" width="80" height="40"
                         class="d-inline-block align-top" alt="">
                     <span class="navbar-text">Alianza Salud</span>
                 </a>
@@ -30,10 +31,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link" href="./presupuesto.html">Presupuesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./about-us.html">About us</a>
@@ -46,23 +50,23 @@
 </header>
 
 <body>
-
-    <div class="section-container">
-        <div class="welcome-container d-flex flex-column">
-            <h1 class="text-center h1-form">Falta muy poco para que sea parte de esta gran familia.</h1>
-            <h4 class="text-center h4-form">Complete el siguiente formulario para poder contactarnos con usted</h4>
+   
+    <div class="section-container d-flex "> 
+        <div class="welcome-container">
+            <h1 class="h1-form text-center">Falta muy poco para que sea parte de esta gran familia.</h1>
+            <h4 class="h4-form text-center">Complete el siguiente formulario para poder contactarnos con usted</h4>
         </div>
         <div id="fondoformulario" class="container col-3 justify-content-center">
-            <form class="formulario mt-4 mb-7" id="contacto">
-                <div class="col-12">
-                <label for="Nombre" class="form-label">Nombre y apellido:</label>
-                <input
+            <form class="formulario mt-4 mb-5" id="contacto">
+                <div class="col-md-12">
+                    <label for="nombre" class="form-label">Nombre y apellido:</label>
+                    <input
                   class=" -input form-control"
                   type="text"
                   id="nombre"
                   name="nombre"
                   placeholder="Escribe tu nombre"
-                />
+                    />
                 </div>
                 <div class="col 12">
                 <label for="Email" class="form-label">E-mail: </label>
@@ -74,16 +78,15 @@
                   placeholder="Escribe tu E-mail"
                 />
                 </div>
-      
-                <div class="col-12">
-                <label for="Telefono" class="form-label">Telefono:</label>
-                <input
-                  class="-input form-control"
-                  type="text"
-                  placeholder="Escribe tu telefono"
-                />
+                <div class="col-md-12">
+                    <label for="Telefono" class="form-label">Telefono:</label>
+                    <div class="col-12">
+                        <input type="tel" class="-input col-3"  placeholder="prefijo" name="pref1" id="pref1">
+                        <input type="tel" class="-input col-6"  placeholder="escribe tu telefono " name="telefono" id="telefono">
+                    </div>
                 </div>
-                <div class="col-12s">
+                
+                <div class="col-md-12">
                 <label class="form-label" for="Horario"
                   >Disponibilidad horaria:
                 </label>
@@ -117,14 +120,39 @@
                   <option value="18">18</option>
                 </select>
                 </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary" onclick="enviarDatos()">
-                        Enviar
-                    </button>
+                <div class="col-md-12">
+                <button type="onclic" class="btn btn-primary" onclick="enviar()">
+                  Enviar
+                </button>
                 </div>
             </form>
         </div>
     </div>
+    <br>
+    <section class="section-maps col-12">
+        <div class="row">
+            <div class="tarjeta col-6">
+                <h5 class="card-title" >contactenos</h5>
+                <ul style="list-style : none ;">
+                    <li>
+                        nuestra direccion es:
+                    </li>
+                    <li>
+                        Oyuela 1400
+                    </li>
+                    <li>
+                        V.Dominico, Buenos Aires
+                    </li>
+                </ul>
+            </div>
+
+            <div col-6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.0695067123543!2d-58.34886212549112!3d-34.703426772918654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332c1de67dd95%3A0x69e0bb2d61216abc!2sJos%C3%A9%20Mart%C3%ADn%20de%20la%20Serna%204283%2C%20B1874BHI%20Villa%20Dominico%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1682466532123!5m2!1ses-419!2sar" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+
+    </section>
 </body>
 <div class="wrapper">
     <footer class=" text-center text-black bg-white">
@@ -144,7 +172,7 @@
             </section>
         </div>
         <div class="text-center p-3 footer-end">
-            <img src="./imagenes/alianzasalud-logo-footer-transparent.png" width="80" height="40"
+            <img src="./alianzasalud-logo-footer-transparent.png" width="80" height="40"
                 class="d-inline-block align-top footer-img" alt="">
 
         </div>
