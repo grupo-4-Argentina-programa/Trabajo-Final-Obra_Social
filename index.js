@@ -10,7 +10,7 @@ function cotizarPlan(event) {
   const porcentajePlanBasico = 0.2;
   const porcentajePlanPremium = 0.3;
 
-  let costoFinalPlanjoven = Math.min(sueldo*porcentajePlanJoven);
+  let costoFinalPlanjoven = Math.min(sueldo * porcentajePlanJoven);
   if (edad < 30) {
     costoFinalPlanjoven = costoFinalPlanjoven * 0.9;
   }
@@ -20,6 +20,7 @@ function cotizarPlan(event) {
   document.querySelector('#planjoven').textContent = cotizacionPlanjoven;
   const planJoven = document.querySelector('#planjoven');
   planJoven.innerHTML = `
+  <p><b>${cotizacionPlanjoven}</b></p>
   <h5>Plan Joven</h5>
   <br>
   <h6>Beneficios</h6>
@@ -29,13 +30,14 @@ function cotizarPlan(event) {
       <li>100% de cobertura en métodos anticonceptivos</li>
       <li>Cobertura nacional e internacional</li>
   </ul>
+  <a href="./contacto.html"><button type="submit">Estoy interesado/a!</button></a>
   <br>
-  <p><b>${cotizacionPlanjoven}</b></p>
+  </div>
 `;
-  
 
 
-  let costoFinalPlanbasico = Math.min(sueldo*porcentajePlanBasico);
+
+  let costoFinalPlanbasico = Math.min(sueldo * porcentajePlanBasico);
   if (edad < 30) {
     costoFinalPlanbasico = costoFinalPlanbasico * 0.9;
   }
@@ -45,6 +47,7 @@ function cotizarPlan(event) {
   document.querySelector('#planbasico').textContent = cotizacionPlanbasico;
   const planBasico = document.querySelector('#planbasico');
   planBasico.innerHTML = `
+  <p><b>${cotizacionPlanbasico}</b></p>
   <h5>Plan basico</h5>
   <br>
   <h6>Beneficios</h6>
@@ -55,11 +58,12 @@ function cotizarPlan(event) {
       <li>Tramites on-line y credencial digital</li>
       <li>Médico a domicilio <b>sin cargo</b></li>
   </ul>
+  <a href="./contacto.html"><button type="submit">Estoy interesado/a!</button></a>
   <br>
-  <p><b>${cotizacionPlanbasico}</b></p>
+
 `;
 
-  let costoFinalPlanpremium = Math.min(sueldo*porcentajePlanPremium);
+  let costoFinalPlanpremium = Math.min(sueldo * porcentajePlanPremium);
   if (edad < 30) {
     costoFinalPlanpremium = costoFinalPlanpremium * 0.9;
   }
@@ -69,6 +73,7 @@ function cotizarPlan(event) {
   document.querySelector('#planpremium').textContent = cotizacionPlanpremium;
   const Planpremium = document.querySelector('#planpremium');
   Planpremium.innerHTML = `
+  <p><b>${cotizacionPlanpremium}</b></p>
   <h5>Plan Premium</h5>
   <br>
   <h6>Beneficios</h6>
@@ -79,8 +84,8 @@ function cotizarPlan(event) {
       <li>Máximos valores de reintegros</li>
       <li>Asistencia al viajero</li>
   </ul>
+  <a href="./contacto.html"><button type="submit">Estoy interesado/a!</button></a>
   <br>
-  <p><b>${cotizacionPlanpremium}</b></p>
 `;
 
   const planjoven = document.querySelector('#planjoven');
@@ -104,6 +109,42 @@ function cotizarPlan(event) {
   columna3.appendChild(cotizacion3);
 }
 
+//scroll hacia el resultado de presupuesto
+
+function scrollToResultado() {
+  const resultadoSection = document.getElementById('resultado');
+  resultadoSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+//funcion validar
+function validar() {
+  $('#Nombre-error').html('');
+  $('#Email').html('');
+  $('#Dni-error').html('');
+  $('#Edad-error').html('');
+  $('#Sueldo-error').html('');
+
+if($('#nombre').val() == '') {
+  $('Nombre-error').html('completar este campo');
+}
+
+if($('#email').val() == '') {
+  $('Emal-error').html('completar este campo');
+}
+
+if($('#dni').val() == '') {
+  $('Dni-error').html('completar este campo');
+}
+
+if($('#edad').val() == '') {
+  $('Edad-error').html('completar este campo');
+}
+
+if($('#sueldo').val() == '') {
+  $('Sueldo-error').html('completar este campo');
+}
+}
+
 //jQuery navbar
 $(window).scroll(function () {
   let navbar = $('.navbar');
@@ -113,12 +154,3 @@ $(window).scroll(function () {
     navbar.removeClass('transparent');
   }
 });
-
-//validateJS
-window.addEventListener('load', () => {
-  let validadorFormulario = new FormValidator('registrarDatos', [{
-    name: 'Nombre',
-    display: 'Nombre',
-    rules: 'required|min_length[10]'
-  }]);
-})
