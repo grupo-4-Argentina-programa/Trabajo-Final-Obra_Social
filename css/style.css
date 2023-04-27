@@ -497,6 +497,11 @@ footer{
     width: fit-content;
   }
 }@media screen and (max-width:991px){
+  .goodbye-p-container{
+    margin-top: 100px;
+    font-size: x-large;
+    width: fit-content;
+  }
   .about-us-txt-container{
     margin-top: 200px;
   }
