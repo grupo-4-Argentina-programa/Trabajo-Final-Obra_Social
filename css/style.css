@@ -197,8 +197,15 @@ h5{
     font-family: "Nunito" sans-serif;
     font-size: black;
 }
-.b2 {
-  background-color: rgb(17, 63, 124);
+.b2{
+  border: none;
+  background-color: #1226aa;
+  color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+.b2:hover {
+  background-color: #0753b3;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7);
 }
 .prev-benefits{
   color:gray;
@@ -468,7 +475,6 @@ footer{
       margin-top: 150px;
       flex-wrap: wrap;
       align-items: center;
-
     }
     .top-text{
       flex-wrap: wrap;
@@ -484,7 +490,7 @@ footer{
       width: 60px;
     }
     .col-md-4{
-      width: 90%;
+      width: 80%;
       align-items: center;
     }
     .h-100{
