@@ -181,6 +181,21 @@ h4 {
   margin-bottom: -50px;
 }
 
+.btn-primary {
+  background-color: #1226aa;
+  border-color: #1226aa;
+}
+.a-white{
+  color: #fff;
+}
+.a-white:hover{
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: lighten(#1226aa, 20%);
+  border-color: #1c3daa;
+}
 /**google map**/
 .container-of-maps{
   display: flex;
