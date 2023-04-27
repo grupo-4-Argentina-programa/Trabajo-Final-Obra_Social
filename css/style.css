@@ -154,6 +154,7 @@ body{
   justify-content: center;
   align-items: center;
 }
+
 .container{
   background-color: antiquewhite;
   margin-top: 50px;
@@ -162,7 +163,6 @@ body{
   justify-content: center;
   flex-direction: row;
 }.card-container{
-  margin-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -171,7 +171,6 @@ body{
 }.card-body{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   line-height: 1.5;
   flex-wrap: wrap;
@@ -181,13 +180,13 @@ body{
 h5{
   font-weight: 700;
 }h6{
-  margin: 0;
   font-weight: 700;
 }.resp{
   margin-left: 20px;
 }.card{
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}.last-img{
+}
+.last-img{
   height:250px;
 }input,button {
     border-radius: 100px;
@@ -655,11 +654,13 @@ footer{
   }
   .card-body{
     align-items: center;
+    justify-content: center;
   }
   .plan-joven{
     margin-left: 10px;
     align-items: center;
     padding-left: 10px;
+    width: 250px;
   }
 }
 @media screen and (max-width:390px){
