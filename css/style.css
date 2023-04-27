@@ -146,7 +146,36 @@ body{
 .form-check{
   margin-top: 20px;
 }
+/*Despedida*/
+.bg-edit{
+  background: rgb(18,38,170);
+  background: linear-gradient(90deg, rgba(18,38,170,0.5) 0%, rgba(87,132,226,0.5) 51%, rgba(252,251,251,0.5) 100%);
+}
+.despedida-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  flex-wrap: wrap;
 
+}
+.goodbye-p-container{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: rgb(18,38,170);
+  background: linear-gradient(270deg, rgba(18,38,170,0.5) 0%, rgba(87,132,226,0.5) 0%, rgba(252,251,251,0.5) 100%);
+  width: fit-content;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
+}
+.goodbye-p{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 700;
+  line-height: 3;
+}
 /*TARJETAS*/
 .row{
   display: flex;
@@ -370,6 +399,10 @@ footer{
   }
  }
  @media screen and (max-width: 1100px) {
+  .goodbye-p-container{
+    font-size: large;
+    width: fit-content;
+  }
   nav{
     display: flex;
     justify-content: center;
@@ -464,6 +497,18 @@ footer{
     width: fit-content;
   }
 }@media screen and (max-width:991px){
+  .despedida-container{
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .goodbye-p-container{
+    margin-top: 100px;
+    font-size: x-large;
+    width: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .about-us-txt-container{
     margin-top: 200px;
   }
@@ -505,6 +550,11 @@ footer{
     }
   }
   @media screen and (max-width: 700px) {
+    .goodbye-p-container{
+      margin-top: 150px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
     .navbar-logo {
       left: 40%; 
       height:50px;
