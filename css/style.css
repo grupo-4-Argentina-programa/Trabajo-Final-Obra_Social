@@ -509,6 +509,12 @@ footer{
     margin-left: 10px;
     margin-right: 10px;
   }
+  .goodbye-p{
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .about-us-txt-container{
     margin-top: 200px;
   }
@@ -554,6 +560,13 @@ footer{
       margin-top: 150px;
       margin-left: 20px;
       margin-right: 20px;
+    }
+    .goodbye-p{
+      font-weight: 300;
+      line-height: 1;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 1.5rem;
     }
     .navbar-logo {
       left: 40%; 
