@@ -182,18 +182,23 @@ h4 {
 }
 
 /**google map**/
-.container-maps {
-  background-color: antiquewhite;
+.container-of-maps{
   display: flex;
-  justify-content:end ;
+  justify-content: center;
+}
+.container-maps {
+  background-color: white;
+  display: flex;
+  justify-content:center;
   margin-bottom: 100px;
+  width: fit-content;
 }
 
 .maps {
   margin-left: 20px;
   border-radius: 10px;
   width: 400px;
-  height: 200px;
+  height: 300px;
 }
 /*footer*/
 .wrapper {
