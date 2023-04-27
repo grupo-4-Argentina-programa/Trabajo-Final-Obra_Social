@@ -58,21 +58,27 @@
                     <h4>¡Quiero asociarme!</h4>
                     <div class="col-md-6" id="formulario">
                         <form>
+                            <span id="Nombre-error"></span>
                             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" class="form-control"
                                 required>
-                            <span id="Nombre-error"></span>
+                            
+                            <span id="Dni-error"></span>
                             <input type="text" id="dni" name="dni" placeholder="Inserte su numero de documento"
                                 class="form-control" required>
-                            <span id="Dni-error"></span>
+                            
+                            <span id="Email-error"></span>
                             <input type="text" id="email" name="email" placeholder="Email" class="form-control"
                                 required>
-                            <span id="Email-error"></span>
+                            
+                            <span id="Edad-error"></span>
                             <input type="text" id="edad" name="edad" placeholder="Tu edad" class="form-control"
                                 required>
-                            <span id="Edad-error"></span>
+
+                            <span id="Sueldo-error"></span>
                             <input type="number" id="sueldo" name="sueldo" max="200000"
                                 placeholder="Sueldo bruto en pesos" class="form-control" required>
-                            <span id="Sueldo-error"></span>
+                                <br>
+                                <span id="Provincia-error"></span>
                             <label for="Provincia">Lugar de residencia: </label>
                             <select id="provincia" name="provincia" required>
                                 <option value="">Seleccioná una provincia</option>
