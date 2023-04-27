@@ -147,6 +147,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
+margin-top: 200px;
 }
 .bg-edit{
 background: rgb(18,38,170);
@@ -156,7 +157,6 @@ background: linear-gradient(90deg, rgba(18,38,170,0.5) 0%, rgba(87,132,226,0.5) 
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-
 }
 .goodbye-p-container{
 display: flex;
@@ -444,9 +444,6 @@ background-color: #25d366;
 .btn-instagram:hover {
 background-color: #C13584;
 }
-
-
-
 /*Estilo formulario contacto*/
 .section-container {
 margin-top: 5%;
