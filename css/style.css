@@ -160,7 +160,6 @@ body{
 .despedida-container{
   display: flex;
   justify-content: center;
-  margin-top: 150px;
   flex-wrap: wrap;
 
 }
