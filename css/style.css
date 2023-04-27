@@ -357,8 +357,9 @@ height: 350px;
 hr {
 border-color: #000000;
 background-color: #000000;
-width: 80%;
+width: 100%;
 height: 2px;
+align-self: center;
 }.li-aus{
   list-style-type:disc;
   margin-top: 5px;
