@@ -147,6 +147,12 @@ body{
   margin-top: 20px;
 }
 /*Despedida*/
+.bug-fix{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .bg-edit{
   background: rgb(18,38,170);
   background: linear-gradient(90deg, rgba(18,38,170,0.5) 0%, rgba(87,132,226,0.5) 51%, rgba(252,251,251,0.5) 100%);
