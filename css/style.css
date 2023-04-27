@@ -561,6 +561,13 @@ footer{
       margin-left: 20px;
       margin-right: 20px;
     }
+    .goodbye-p{
+      font-weight: 300;
+      line-height: 1;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 1.5rem;
+    }
     .navbar-logo {
       left: 40%; 
       height:50px;
