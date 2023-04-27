@@ -1,3 +1,11 @@
+//funcion de scroll desde la nav en un mobile
+function scrollDownOnMobile() {
+  if(/Android|webOS|iphone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    window.scrollBy(0, window.innerHeight);
+  }
+}
+
+
 const form = document.querySelector("form");
 form.addEventListener("submit", cotizarPlan);
 
