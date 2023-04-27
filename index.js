@@ -123,34 +123,34 @@ function scrollToResultado() {
 function validar() {
   
   $('#Nombre-error').html('');
-  $('#Email').html('');
+  $('#Email-error').html('');
   $('#Dni-error').html('');
   $('#Edad-error').html('');
   $('#Sueldo-error').html('');
   $('#Provincia-error').html('');
 
 if($('#nombre').val() == '') {
-  $('#Nombre-error').html('completar este campo');
+  $('#Nombre-error').html('*completar este campo');
 }
 
 if($('#email').val() == '') {
-  $('#Emal-error').html('completar este campo');
+  $('#Email-error').html('*completar este campo');
 }
 
 if($('#dni').val() == '') {
-  $('#Dni-error').html('completar este campo');
+  $('#Dni-error').html('*completar este campo');
 }
 
 if($('#edad').val() == '') {
-  $('#Edad-error').html('completar este campo');
+  $('#Edad-error').html('*completar este campo');
 }
 
 if($('#sueldo').val() == '') {
-  $('#Sueldo-error').html('completar este campo');
+  $('#Sueldo-error').html('*completar este campo');
 }
 
 if($('#provincia').val() == '') {
-  $('#Provincia-error').html('completar este campo');
+  $('#Provincia-error').html('*completar este campo');
 }
 }
 
