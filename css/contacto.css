@@ -120,6 +120,8 @@ a {
   color: white;
   width: 100%;
   margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .container {
@@ -147,7 +149,9 @@ h4 {
   font-weight: 400;
   margin-top: 25px;
 }
-
+.fondoformulario{
+  background-color: rgba(255, 255, 255, 0.89);
+}
 .formulario {
   width: 400;
   text-align: left;
@@ -172,12 +176,17 @@ h4 {
 
 /**google map**/
 .container-maps {
-  background-color: #1226aa;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content:end ;
+  margin-bottom: 100px;
 }
 
 .maps {
   margin-left: 20px;
   border-radius: 10px;
+  width: 400px;
+  height: 200px;
 }
 /*footer*/
 .wrapper {
