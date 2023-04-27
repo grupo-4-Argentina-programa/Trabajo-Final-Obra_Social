@@ -6,6 +6,8 @@ function cotizarPlan(event) {
   const edad = Number(document.querySelector('#edad').value);
   event.preventDefault();
   const sueldo = Number(document.querySelector('#sueldo').value);
+  const email = document.querySelector('#email').value;
+  const provincia = document.querySelector('#provincia').value;
   const porcentajePlanJoven = 0.1;
   const porcentajePlanBasico = 0.2;
   const porcentajePlanPremium = 0.3;
@@ -125,6 +127,7 @@ function validar() {
   $('#Dni-error').html('');
   $('#Edad-error').html('');
   $('#Sueldo-error').html('');
+  $('#Provincia-error').html('');
 
 if($('#nombre').val() == '') {
   $('#Nombre-error').html('completar este campo');
@@ -144,6 +147,10 @@ if($('#edad').val() == '') {
 
 if($('#sueldo').val() == '') {
   $('#Sueldo-error').html('completar este campo');
+}
+
+if($('#provincia').val() == '') {
+  $('#Provincia-error').html('completar este campo');
 }
 }
 
