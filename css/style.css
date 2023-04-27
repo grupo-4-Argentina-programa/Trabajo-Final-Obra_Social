@@ -146,7 +146,31 @@ body{
 .form-check{
   margin-top: 20px;
 }
+/*Despedida*/
+.despedida-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  flex-wrap: wrap;
 
+}
+.goodbye-p-container{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #fff;
+  width: fit-content;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
+}
+.goodbye-p{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 700;
+  line-height: 3;
+}
 /*TARJETAS*/
 .row{
   display: flex;
@@ -370,6 +394,15 @@ footer{
   }
  }
  @media screen and (max-width: 1100px) {
+body{
+  height: fit-content;
+}
+  .goodbye-p-container{
+    margin-top: 100px;
+    font-size: large;
+    width: fit-content;
+    
+  }
   nav{
     display: flex;
     justify-content: center;
